@@ -1,10 +1,12 @@
 body {
     text-align: center;
-    background-color: yellow;
+    background-color: rgb(102, 28, 77);
+    color: white;
 }
 
 button {
     cursor: pointer;
+    color: rgb(102, 28, 77);
 }
 
 ul {
@@ -16,6 +18,7 @@ li {
     margin: 5px;
     background: #faebd7;
     font-weight: bold;
+    color: rgb(102, 28, 77);
 }
 
 .label {
