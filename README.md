@@ -1,6 +1,5 @@
-# EatDaBurger
-## Project Name: MySQLEmployeeTracker
-## Title: Employee Tracker
+## Project Name: Eat-The-Burger
+## Title: Eat-The-Burger
 
 ![video](Assets/employeetracker.gif)
 
@@ -23,16 +22,21 @@
 
 ##  1. <a name='Linktorepository'></a>Link to repository
 
-* [Repository](https://github.com/sskumar4/MySQLEmployeeTracker)
-* [Link to Walkthrough video](https://youtu.be/fQnaw22uupk)
+* [Repository](https://github.com/sskumar4/EatDaBurger)
+* [Link to Heroku deployment](https://limitless-tor-53439.herokuapp.com/)
   
 
 ##  2. <a name='Introduction'></a>Introduction   
-Create a burger logger with MySQL, Node, Express, Handlebars and ORM following the MVC design pattern and using Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
+Create a  a full stack project burger logger with MySQL, Node, Express, Handlebars and ORM following the MVC design pattern. The app uses Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
+'Eat the Burger' is a full stack app that the front-end and back-end interact with each other. The Front End loads information from the back-end using javascript and Node.js; loading items from the Mysql database, which are then populated by the user based on their burger entries. The app then moves the burgers when the 'Devour it' button is clicked which then is moved it to the devoured burger column.
+
+Users can create custom named burgers and submit through the form.  They are added to the MySQL database.  All database queries are run through a custom built ORM.
 
 ##  3. <a name='Technologies'></a>Technologies 
-Javascript, nodeJS, console.table, inquirer, mysql
+JavaScript, ORM, jQuery, Node.js, Express.js, Handlebars.js, mySQL Database, HTML, CSS, BootStrap, Heroku Jaws_DB
+
+NPM packages -- Express, body-parser, method-override, express-handlebars, mysql
 
 ##  4. <a name='Files'></a>Files
 Created the following 
@@ -42,37 +46,21 @@ js files:
   * eTracker.js, eTracker.js
 
 ##  5. <a name='Features'></a>Features
-  * Used the mysql NPM package to connect to the MySQL database and perform queries.
 
-  * Used InquirerJs NPM package to interact with the user via the command-line.
+### App Setup
+ Create a GitHub repo and clone it to your computer.
+ Make a package.json file by running npm init from the command line.
+ Install the Express npm package: npm install express.
+ Create a server.js file.
+ Install the Handlebars npm package: npm install express-handlebars.
+ Install the body-parser npm package: npm install body-parser.
+ Install MySQL npm package: npm install mysql.
+ Require the following npm packages inside of the server.js file: 
+ express
+ body-parser
 
-  * Used console.table to print MySQL rows to the console. 
-  
-  The command-line application allows users to:
+In this application we make use of html templates with help from handlebars via the express-handlebars node package. We also make use of the MVC paradigm of project management to structure both out file setup, and the content of our script files. We have a homebrewed ORM that is non-database specific, a model script file that ties the ORM to our specific database usage, and then a controller script file to manage our routes. The last little bit of script to handle the router action comes from yet another script file located under our public assets directory, burgers.js. For a project with such small scope the MVC structure may seem like overkill, but that serves as an added purpose for this assignment, by giving us a chance to practice its implementation.
 
-  * Add departments, roles, employees
+## 6. <a name='Launch'></a>Launch
 
-  * View departments, roles, employees
-
-  * Update employee roles
-  
-  * Update employee managers
-
-  * View employees by manager
-
-  * Delete departments, roles, and employees
-
-  * View the total utilized budget which is the combined salaries of all employees in that department 
-
-## 6. <a name='Installation'></a>Installation
-1. Go to https://github.com/sskumar4/MySQLEmployeeTracker and click on the "Clone or Download" button. 
-2. If you don't have the prerequisites installed, type the following:
-   * npm install inquirer
-   * npm install mysql
-   * npm install console-table
-3. Then use your Git bash to execute eTracker.js. 
-  
-
-## 7. <a name='Launch'></a>Launch
-
-To deploy this on a live system, copy all of the files to your computer and follow the instructions in the "Installtion" section. This is a command-line tool, not one that runs in the browser. There are no live pages to demonstrate.
+* Deployed Heroku link to the app: https://limitless-tor-53439.herokuapp.com/
