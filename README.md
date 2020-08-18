@@ -1,7 +1,7 @@
 ## Project Name: Eat-The-Burger
 ## Title: Eat-The-Burger
 
-![video](Assets/employeetracker.gif)
+![video](public/assets/EDB-thumbnail.JPG)
 
 ## Table of Contents
 
