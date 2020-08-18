@@ -41,9 +41,11 @@ NPM packages -- Express, body-parser, method-override, express-handlebars, mysql
 ##  4. <a name='Files'></a>Files
 Created the following 
 SQL files: 
-  * eTrackerDB.sql
+  * schema.sql, seeds.sql
 js files:
-  * eTracker.js, eTracker.js
+  * connection.js, orm.js, burgers_controller.js, burger.js, server.js, burgers.js
+Other files:
+* style.css, main.handlebars, index.handlebars, burger-block.handlebars
 
 ##  5. <a name='Features'></a>Features
 
@@ -59,7 +61,7 @@ js files:
  express
  body-parser
 
-In this application we make use of html templates with help from handlebars via the express-handlebars node package. We also make use of the MVC paradigm of project management to structure both out file setup, and the content of our script files. We have a homebrewed ORM that is non-database specific, a model script file that ties the ORM to our specific database usage, and then a controller script file to manage our routes. The last little bit of script to handle the router action comes from yet another script file located under our public assets directory, burgers.js. For a project with such small scope the MVC structure may seem like overkill, but that serves as an added purpose for this assignment, by giving us a chance to practice its implementation.
+In this application, html templates are used with help from handlebars via the express-handlebars node package. Also used the MVC paradigm of project management to structure both out file setup, and the content of our script files. ORM is created that is non-database specific, a model script file that ties the ORM to our specific database usage, and then a controller script file to manage our routes. The last little bit of script to handle the router action comes from script file located under the public assets directory, burgers.js. 
 
 ## 6. <a name='Launch'></a>Launch
 
